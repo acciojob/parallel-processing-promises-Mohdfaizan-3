@@ -1,15 +1,15 @@
 //your JS code here. If required.
 const images = [
   {
-    url: "https://unsplash.it/100/150",
+    url: "https://picsum.photos/id/237/200/300",
     alt: "Image 1",
   },
   {
-    url: "https://unsplash.it/100/200",
+    url: "https://picsum.photos/id/238/200/300",
     alt: "Image 2",
   },
   {
-    url: "https://unsplash.it/100/250",
+    url: "https://picsum.photos/id/239/200/300",
     alt: "Image 3",
   }
   
