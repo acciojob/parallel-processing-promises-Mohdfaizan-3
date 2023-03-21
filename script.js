@@ -1,10 +1,22 @@
 //your JS code here. If required.
 const images = [
-  { url: 'https://via.placeholder.com/150', alt: 'Image 1' },
-  { url: 'https://via.placeholder.com/200', alt: 'Image 2' },
-  { url: 'https://via.placeholder.com/250', alt: 'Image 3' },
-  { url: 'https://via.placeholder.com/300', alt: 'Image 4' }
-];
+  {
+    url: "https://unsplash.it/100/150",
+    alt: "Image 1",
+  },
+  {
+    url: "https://unsplash.it/100/200",
+    alt: "Image 2",
+  },
+  {
+    url: "https://unsplash.it/100/250",
+    alt: "Image 3",
+  },
+  {
+    url: "https://unsplash.it/100/300",
+    alt: "Image 4",
+  },
+];;
 
 function downloadImages(images) {
   const promises = images.map(image => {
@@ -24,6 +36,7 @@ function downloadImages(images) {
   Promise.all(promises)
     .then(imgs => {
       const output = document.getElementById('output');
+		output.innerHTML = null;
       imgs.forEach(img => {
         output.appendChild(img);
       });
