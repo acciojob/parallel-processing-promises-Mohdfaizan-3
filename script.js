@@ -11,12 +11,9 @@ const images = [
   {
     url: "https://unsplash.it/100/250",
     alt: "Image 3",
-  },
-  {
-    url: "https://unsplash.it/100/300",
-    alt: "Image 4",
-  },
-];;
+  }
+  
+];
 
 function downloadImages(images) {
   const promises = images.map(image => {
